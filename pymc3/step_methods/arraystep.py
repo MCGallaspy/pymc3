@@ -45,7 +45,7 @@ class BlockedStep(object):
 
             return CompoundStep(steps)
         else:
-            return super(ArrayStep, cls).__new__(cls)
+            return super(BlockedStep, cls).__new__(cls)
 
 class ArrayStep(BlockedStep):
     def __init__(self, vars, fs, allvars=False, blocked=True):
