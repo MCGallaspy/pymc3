@@ -37,7 +37,7 @@ class BlockedStep(object):
             # and append them to a CompoundStep
             steps = []
             for var in vars:
-                step = super(ArrayStep, cls).__new__(cls)
+                step = super(BlockedStep, cls).__new__(cls)
                 # If we don't return the instance we have to manually
                 # call __init__
                 step.__init__([var], *args, **kwargs)
