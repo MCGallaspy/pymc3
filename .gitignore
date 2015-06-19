@@ -6,3 +6,10 @@ dist/*
 .ipynb_checkpoints
 tmtags
 tags
+
+# Vagrant stuff
+.vagrant/
+Vagrantfile
+
+# PyCharm
+.idea/
