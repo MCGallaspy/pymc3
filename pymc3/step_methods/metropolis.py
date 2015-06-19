@@ -116,6 +116,8 @@ class Metropolis(FastArrayStep):
             else:
                 delta[self.discrete] = round(delta[self.discrete], 0).astype(int)
                 q = q0 + delta
+        else:
+            q = q0 + delta
 
 
         q_new = metrop_select(self.delta_logp(q,q0), q, q0)
